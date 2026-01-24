@@ -1,0 +1,17 @@
+# Startuj z Ubuntu 22.04
+FROM ubuntu:22.04
+
+# Instalacja curl
+RUN apt-get update && apt-get install -y curl
+
+# Ustawienie katalogu roboczego
+WORKDIR /usr/src/app
+
+# Kopiujemy skrypt (musi być w tym samym folderze co Dockerfile)
+COPY script.sh .
+
+# Nadanie uprawnień (ważne na Windowsie!)
+RUN chmod +x script.sh
+
+# Uruchomienie skryptu
+CMD ./script.sh

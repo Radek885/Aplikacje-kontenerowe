@@ -1,0 +1,2 @@
+Polecenie do uruchomienia aplikacji:
+docker run -p 8081:80 radek8851/115-app
