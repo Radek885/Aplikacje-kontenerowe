@@ -21,49 +21,13 @@
 ![07](images/1-running-containers/screenshot%2007.png)
 
 8. Komenda 'docker run -it --name ubuntu-shell ubuntu:22.04 /bin/bash'
-![08](images/1-running-containers/screenshot%2008.png)
+![08](images/1-running-containers/screenshot%2014.png)
 
-9. Komenda `docker run ubuntu:22.04 /bin/echo 'Hello world!'`: 
-![09](images/1-running-containers/screenshot%2009.png)
+9. Komenda `docker ps -a`: 
+![09](images/1-running-containers/screenshot%2017.png)
 
-10. Komenda `docker ps`: 
-![10](images/1-running-containers/screenshot%2010.png)
+10. Komenda `docker start -i ubuntu-shell`: 
+![10](images/1-running-containers/screenshot%2020.png)
 
-11. Komenda `docker run -it ubuntu:22.04 /bin/bash`: 
-![11](images/1-running-containers/screenshot%2011.png)
-
-12. Komenda `ls -l`, `pwd` oraz `hostname`: 
-![12](images/1-running-containers/screenshot%2012.png)
-
-13. Komenda (`echo` oraz `cat`): 
-![13](images/1-running-containers/screenshot%2013.png)
-
-14. Komenda `exit`: 
-![14](images/1-running-containers/screenshot%2014.png)
-
-15. Komenda `docker ps -a`: 
-![15](images/1-running-containers/screenshot%2015.png)
-
-16. Komenda `docker run -d`: 
-![16](images/1-running-containers/screenshot%2016.png)
-
-17. Komenda 
-![17](images/1-running-containers/screenshot%2017.png)
-
-18. Komenda `docker logs`: 
-![18](images/1-running-containers/screenshot%2018.png)
-
-19. Komenda `docker stop`: 
-![19](images/1-running-containers/screenshot%2019.png)
-
-20. Komenda `docker rm`: 
-![20](images/1-running-containers/screenshot%2020.png)
-
-21. Komenda
-![21](images/1-running-containers/screenshot%2021.png)
-
-22. Czyszczenie nieużywanych zasobów systemowych komendą `docker system prune`: 
-![22](images/1-running-containers/screenshot%2022.png)
-
-23. Końcowe sprawdzenie czystości środowiska (`docker images` oraz `docker ps -a`): 
-![23](images/1-running-containers/screenshot%2023.png)
+11. Komenda `docker rm ubuntu-shell`: 
+![11](images/1-running-containers/screenshot%2023.png)
