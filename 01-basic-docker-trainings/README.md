@@ -1,7 +1,7 @@
 
 
 1. Komenda `docker images`: 
-![01](images/1-running-containers/screenshot%2001.png)
+![01]("images/1-running-containers/screenshot 01.png")
 
 2. Komenda `docker search ubuntu`: 
 ![02](images/1-running-containers/screenshot%2002.png)
