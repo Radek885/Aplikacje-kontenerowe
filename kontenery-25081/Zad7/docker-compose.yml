@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Serwis Bazy Danych
+  db:
+    image: mongo:latest
+    volumes:
+      - mongo-data:/data/db
+
+  # Serwis Backend (API)
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb://db:27017/todolist
+    depends_on:
+      - db
+
+  # Serwis Frontend (UI)
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
